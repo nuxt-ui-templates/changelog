@@ -27,11 +27,10 @@ useSeoMeta({
 
 <template>
   <UApp>
-    <div class="min-h-screen grid lg:grid-cols-2">
-      <UColorModeButton class="fixed top-4 right-4 z-10" />
-
+    <div class="min-h-screen xl:grid xl:grid-cols-2">
       <UPageSection
-        title="Changelog"
+        title="Changelog Template"
+        description="Display GitHub release notes as a beautiful changelog for any repository with this Nuxt UI Pro template."
         orientation="vertical"
         :links="[{
           label: 'Documentation',
@@ -48,21 +47,30 @@ useSeoMeta({
           to: 'https://github.com/nuxt-ui-pro/changelog',
           target: '_blank'
         }]"
-        class="border-b border-default lg:border-b-0 sticky inset-y-0 h-screen"
+        class="border-b border-default xl:border-b-0 xl:sticky xl:inset-y-0 xl:h-screen"
         :ui="{
-          links: 'gap-px justify-start',
-          title: 'font-light text-left',
-          container: 'h-full items-center justify-center'
+          container: 'h-full items-center justify-center',
+          wrapper: 'flex flex-col',
+          headline: 'mb-6',
+          title: 'font-light text-left text-4xl',
+          description: 'font-light text-left max-w-lg',
+          links: 'gap-1 justify-start -ms-2.5'
         }"
       >
+        <template #top>
+          <SkyBg />
+        </template>
+
         <template #headline>
-          <LogoPro class="w-auto h-6 shrink-0" />
+          <LogoPro class="w-auto h-6 shrink-0 text-highlighted" />
         </template>
 
         <template #default />
       </UPageSection>
 
-      <section class="px-4 sm:px-6 lg:px-0 lg:-ms-30 flex-1">
+      <section class="px-4 sm:px-6 xl:px-0 xl:-ms-30 xl:flex-1">
+        <UColorModeButton class="fixed top-4 right-4 z-10" />
+
         <NuxtPage />
       </section>
     </div>

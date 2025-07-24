@@ -1,6 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', '@nuxt/ui-pro', '@nuxtjs/mdc'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/ui-pro',
+    '@nuxtjs/mdc'
+  ],
 
   devtools: {
     enabled: true
@@ -11,13 +15,14 @@ export default defineNuxtConfig({
   mdc: {
     highlight: {
       langs: ['diff', 'ts', 'vue', 'css']
+    },
+    remarkPlugins: {
+      'remark-github': {
+        options: {
+          repository: 'nuxt-ui-pro/changelog'
+        }
+      }
     }
-    // remarkPlugins: {
-    //   plugins: {
-    //     'remark-gfm': {},
-    //     'remark-github': {}
-    //   }
-    // }
   },
 
   ui: {

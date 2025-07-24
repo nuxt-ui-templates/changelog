@@ -1,19 +1,19 @@
 <script setup lang="ts">
-const { data: versions } = await useFetch('https://ungh.cc/repos/nuxt/ui/releases', {
-  transform: (data) => {
+const appConfig = useAppConfig()
+
+const { data: versions } = await useFetch(computed(() => `https://ungh.cc/repos/${appConfig.repository}/releases`), {
+  transform: (data: {
+    releases: {
+      name?: string
+      tag: string
+      publishedAt: string
+      markdown: string
+    }[]
+  }) => {
     return data.releases.map(release => ({
-      title: release.name,
+      title: release.name || release.tag,
       date: release.publishedAt,
-      markdown: release.markdown,
-      authors: [{
-        name: release.author,
-        to: `https://github.com/${release.author}`,
-        target: '_blank',
-        avatar: {
-          src: `https://github.com/${release.author}.png`,
-          size: 'xs'
-        }
-      }]
+      markdown: release.markdown
     }))
   }
 })
@@ -25,6 +25,7 @@ const { data: versions } = await useFetch('https://ungh.cc/repos/nuxt/ui/release
     :ui="{
       indicator: 'inset-y-0'
     }"
+    :indicator-motion="false"
     class="py-16 sm:py-24 lg:py-32"
   >
     <UChangelogVersion
@@ -32,8 +33,12 @@ const { data: versions } = await useFetch('https://ungh.cc/repos/nuxt/ui/release
       :key="version.name"
       v-bind="version"
       :ui="{
+        root: 'flex items-start',
         container: 'max-w-xl',
-        title: 'text-3xl'
+        header: 'border-b border-default pb-4',
+        title: 'text-3xl',
+        date: 'text-sm/9 text-highlighted',
+        indicator: 'sticky top-0 pt-16 -mt-16 sm:pt-24 sm:-mt-24 lg:pt-32 lg:-mt-32'
       }"
     >
       <template #body>
