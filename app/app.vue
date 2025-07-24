@@ -47,18 +47,20 @@ useSeoMeta({
           to: 'https://github.com/nuxt-ui-pro/changelog',
           target: '_blank'
         }]"
-        class="border-b border-default xl:border-b-0 xl:sticky xl:inset-y-0 xl:h-screen"
         :ui="{
+          root: 'border-b border-default xl:border-b-0 xl:sticky xl:inset-y-0 xl:h-screen overflow-hidden',
           container: 'h-full items-center justify-center',
           wrapper: 'flex flex-col',
           headline: 'mb-6',
-          title: 'font-light text-left text-4xl',
-          description: 'font-light text-left max-w-lg',
+          title: 'text-left text-4xl',
+          description: 'text-left max-w-lg',
           links: 'gap-1 justify-start -ms-2.5'
         }"
       >
         <template #top>
           <SkyBg />
+
+          <div class="absolute -right-1/2 z-[-1] rounded-full bg-primary blur-[300px] size-60 sm:size-100 transform -translate-y-1/2 top-1/2" />
         </template>
 
         <template #headline>

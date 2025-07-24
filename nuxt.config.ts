@@ -12,6 +12,10 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  colorMode: {
+    preference: 'dark'
+  },
+
   mdc: {
     highlight: {
       langs: ['diff', 'ts', 'vue', 'css']
