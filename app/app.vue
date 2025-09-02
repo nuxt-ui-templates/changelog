@@ -12,7 +12,7 @@ useHead({
 })
 
 const title = 'Nuxt Changelog Template'
-const description = 'Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.'
+const description = 'Nuxt UI is a comprehensive UI library for Vue and Nuxt applications, offering a collection of fully styled and accessible components.'
 
 useSeoMeta({
   title,
@@ -30,21 +30,21 @@ useSeoMeta({
     <div class="min-h-screen xl:grid xl:grid-cols-2">
       <UPageSection
         title="Changelog Template"
-        description="Display GitHub release notes as a beautiful changelog for any repository with this Nuxt UI Pro template."
+        description="Display GitHub release notes as a beautiful changelog for any repository with this Nuxt UI template."
         orientation="vertical"
         :links="[{
           label: 'Documentation',
           icon: 'i-lucide-book-open',
           variant: 'ghost',
           size: 'md',
-          to: 'https://ui.nuxt.com/getting-started/installation/pro/nuxt',
+          to: 'https://ui.nuxt.com/getting-started/installation/nuxt',
           target: '_blank'
         }, {
           label: 'GitHub',
           icon: 'i-simple-icons-github',
           variant: 'ghost',
           size: 'md',
-          to: 'https://github.com/nuxt-ui-pro/changelog',
+          to: 'https://github.com/nuxt-ui-templates/changelog',
           target: '_blank'
         }]"
         :ui="{
@@ -64,7 +64,7 @@ useSeoMeta({
         </template>
 
         <template #headline>
-          <LogoPro class="w-auto h-6 shrink-0 text-highlighted" />
+          <AppLogo class="w-auto h-6 shrink-0 text-highlighted" />
         </template>
 
         <template #default />

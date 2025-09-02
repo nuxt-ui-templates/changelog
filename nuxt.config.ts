@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
-    '@nuxt/ui-pro',
+    '@nuxt/ui',
     '@nuxtjs/mdc'
   ],
 
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     remarkPlugins: {
       'remark-github': {
         options: {
-          repository: 'nuxt-ui-pro/changelog'
+          repository: 'nuxt-ui-templates/changelog'
         }
       }
     }

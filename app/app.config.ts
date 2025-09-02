@@ -4,9 +4,7 @@ export default defineAppConfig({
     colors: {
       primary: 'cyan',
       neutral: 'slate'
-    }
-  },
-  uiPro: {
+    },
     prose: {
       li: {
         base: 'break-words'
