@@ -12,7 +12,7 @@ useHead({
 })
 
 const title = 'Nuxt Changelog Template'
-const description = 'Nuxt UI is a comprehensive UI library for Vue and Nuxt applications, offering a collection of fully styled and accessible components.'
+const description = 'Display GitHub release notes as a beautiful changelog for any repository with this Nuxt UI template.'
 
 useSeoMeta({
   title,
