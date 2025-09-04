@@ -21,6 +21,17 @@ Use this template to create your own changelog with [Nuxt UI](https://ui.nuxt.co
 npm create nuxt@latest -- -t github:nuxt-ui-templates/changelog
 ```
 
+## Config
+
+To customize the GitHub repository that the changelog fetches releases from, update the `repository` key in `app/app.config.ts`:
+
+```ts [app/app.config.ts]
+// app/app.config.ts
+export default defineAppConfig({
+  repository: 'nuxt/ui' // Change this to your GitHub repository (e.g., 'facebook/react')
+})
+```
+
 ## Setup
 
 Make sure to install the dependencies:
