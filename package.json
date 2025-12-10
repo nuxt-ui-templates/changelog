@@ -15,7 +15,7 @@
     "@iconify-json/simple-icons": "^1.2.60",
     "@nuxt/ui": "^4.2.1",
     "@nuxtjs/mdc": "0.18.4",
-    "nuxt": "^4.2.1",
+    "nuxt": "^4.2.2",
     "remark-github": "^12.0.0"
   },
   "devDependencies": {
