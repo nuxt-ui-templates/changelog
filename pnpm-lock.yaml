@@ -26,6 +26,12 @@ importers:
       remark-github:
         specifier: ^12.0.0
         version: 12.0.0
+      scule:
+        specifier: ^1.3.0
+        version: 1.3.0
+      tailwindcss:
+        specifier: ^4.1.18
+        version: 4.1.18
     devDependencies:
       '@nuxt/eslint':
         specifier: ^1.12.1
