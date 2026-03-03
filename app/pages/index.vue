@@ -35,7 +35,7 @@ const { data: versions } = await useFetch(computed(() => `https://ungh.cc/repos/
       v-bind="version"
       :ui="{
         root: 'flex items-start',
-        container: 'max-w-xl',
+        container: 'max-w-xl min-w-0',
         header: 'border-b border-default pb-4',
         title: 'text-3xl',
         date: 'text-xs/9 text-highlighted font-mono',
