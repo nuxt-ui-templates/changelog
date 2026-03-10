@@ -18,7 +18,7 @@ Use this template to create your own changelog with [Nuxt UI](https://ui.nuxt.co
 ## Quick Start
 
 ```bash [Terminal]
-npm create nuxt@latest -- -t github:nuxt-ui-templates/changelog
+npm create nuxt@latest -- -t ui/changelog
 ```
 
 ## Deploy your own
