@@ -14,9 +14,11 @@ const { data: versions } = await useFetch(computed(() => `https://ungh.cc/repos/
       tag: release.tag,
       title: release.name || release.tag,
       date: release.publishedAt,
-      markdown: release.markdown
+      markdown: release.markdown,
+      expanded: false
     }))
-  }
+  },
+  deep: true
 })
 </script>
 
@@ -43,10 +45,38 @@ const { data: versions } = await useFetch(computed(() => `https://ungh.cc/repos/
       }"
     >
       <template #body>
-        <MDC
-          v-if="version.markdown"
-          :value="version.markdown"
-        />
+        <div
+          class="relative"
+          :class="{
+            'h-auto min-h-64': version.expanded,
+            'h-64 overflow-y-hidden': !version.expanded && version.markdown.length > 256
+          }"
+        >
+          <MDC
+            v-if="version.markdown"
+            :value="version.markdown"
+          />
+          <div
+            v-if="version.markdown.length > 256"
+            class="flex items-end justify-center"
+            :class="{
+              'h-24 absolute inset-x-0 bottom-0 bg-linear-to-t from-default via-default/75 to-transparent': !version.expanded,
+              'h-auto mt-4': version.expanded
+            }"
+          >
+            <UButton
+              size="sm"
+              icon="i-lucide-chevron-down"
+              color="neutral"
+              variant="outline"
+              :data-state="version.expanded ? 'open' : 'closed'"
+              :label="version.expanded ? 'Collapse release' : 'Expand release'"
+              class="group"
+              :ui="{ leadingIcon: 'group-data-[state=open]:rotate-180' }"
+              @click="version.expanded = !version.expanded"
+            />
+          </div>
+        </div>
       </template>
     </UChangelogVersion>
   </UChangelogVersions>
