@@ -5,7 +5,7 @@
 Use this template to create your own changelog with [Nuxt UI](https://ui.nuxt.com).
 
 - [Live demo](https://changelog-template.nuxt.dev/)
-- [Documentation](https://ui.nuxt.com/getting-started/installation/nuxt)
+- [Documentation](https://ui.nuxt.com/docs/getting-started/installation/nuxt)
 
 <a href="https://changelog-template.nuxt.dev/" target="_blank">
   <picture>
