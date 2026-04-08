@@ -7,10 +7,10 @@ export default defineAppConfig({
     },
     prose: {
       li: {
-        base: 'break-words'
+        base: 'wrap-break-word'
       },
       a: {
-        base: 'break-words'
+        base: 'wrap-break-word'
       }
     }
   }
