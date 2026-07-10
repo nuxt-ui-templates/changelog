@@ -43,9 +43,9 @@ const { data: versions } = await useFetch(computed(() => `https://ungh.cc/repos/
       }"
     >
       <template #body>
-        <MDC
+        <AppMarkdown
           v-if="version.markdown"
-          :value="version.markdown"
+          :markdown="version.markdown"
         />
       </template>
     </UChangelogVersion>
