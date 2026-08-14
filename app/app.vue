@@ -28,7 +28,7 @@ useSeoMeta({
   <UApp>
     <div class="min-h-screen xl:grid xl:grid-cols-2">
       <UPageSection
-        title="Changelog"
+        title="Release Notes"
         description="Display GitHub release notes as a beautiful changelog for any repository with this Nuxt UI template."
         orientation="vertical"
         :links="[{
@@ -63,7 +63,11 @@ useSeoMeta({
         </template>
 
         <template #headline>
-          <AppLogo class="w-auto h-6 shrink-0 text-highlighted" />
+          <div class="flex items-center gap-3">
+            <AppLogo class="w-auto h-6 shrink-0 text-highlighted" />
+
+            <TemplateMenu />
+          </div>
         </template>
 
         <template #default />
