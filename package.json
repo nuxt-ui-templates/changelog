@@ -12,20 +12,20 @@
   },
   "dependencies": {
     "@comark/nuxt": "^0.6.2",
-    "@iconify-json/lucide": "^1.2.122",
+    "@iconify-json/lucide": "^1.2.123",
     "@iconify-json/simple-icons": "^1.2.93",
-    "@iconify-json/vscode-icons": "^1.2.70",
+    "@iconify-json/vscode-icons": "^1.2.73",
     "@nuxt/ui": "^4.10.0",
     "nuxt": "^4.5.2",
     "scule": "^1.3.0",
-    "shiki": "^4.4.2",
+    "shiki": "^4.4.3",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.17.0",
     "eslint": "^10.8.1",
     "typescript": "^6.0.3",
-    "vue-tsc": "^3.3.9"
+    "vue-tsc": "^3.3.10"
   },
-  "packageManager": "pnpm@11.20.0"
+  "packageManager": "pnpm@11.22.0"
 }
