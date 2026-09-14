@@ -11,11 +11,11 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@comark/nuxt": "^0.6.2",
-    "@iconify-json/lucide": "^1.2.129",
-    "@iconify-json/simple-icons": "^1.2.94",
-    "@iconify-json/vscode-icons": "^1.2.76",
-    "@nuxt/ui": "^4.11.0",
+    "@comark/nuxt": "^0.7.0",
+    "@iconify-json/lucide": "^1.2.131",
+    "@iconify-json/simple-icons": "^1.2.95",
+    "@iconify-json/vscode-icons": "^1.2.77",
+    "@nuxt/ui": "^4.11.1",
     "nuxt": "^4.5.2",
     "scule": "^1.3.0",
     "shiki": "^4.4.3",
@@ -27,5 +27,5 @@
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.11"
   },
-  "packageManager": "pnpm@12.3.4"
+  "packageManager": "pnpm@12.4.1"
 }
