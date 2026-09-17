@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "@comark/nuxt": "^0.7.0",
-    "@iconify-json/lucide": "^1.2.131",
-    "@iconify-json/simple-icons": "^1.2.95",
+    "@iconify-json/lucide": "^1.2.133",
+    "@iconify-json/simple-icons": "^1.2.96",
     "@iconify-json/vscode-icons": "^1.2.77",
     "@nuxt/ui": "^4.11.1",
     "nuxt": "^4.5.2",
@@ -28,5 +28,5 @@
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.11"
   },
-  "packageManager": "pnpm@12.4.1"
+  "packageManager": "pnpm@12.4.2"
 }
