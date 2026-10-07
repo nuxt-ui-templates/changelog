@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const appConfig = useAppConfig()
 
-const { data: versions, error } = await useFetch(computed(() => `https://ungh.cc/repos/${appConfig.repository}/releases`), {
+const { data: versions } = await useFetch(computed(() => `https://ungh.cc/repos/${appConfig.repository}/releases`), {
   transform: (data: {
     releases: {
       name?: string
@@ -18,10 +18,6 @@ const { data: versions, error } = await useFetch(computed(() => `https://ungh.cc
     }))
   }
 })
-
-if (error.value) {
-  throw createError({ statusCode: error.value.statusCode || 500, statusMessage: 'Failed to fetch releases', fatal: true })
-}
 </script>
 
 <template>
