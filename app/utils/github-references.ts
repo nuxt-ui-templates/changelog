@@ -1,4 +1,4 @@
-import { defineComarkPlugin } from '@comark/nuxt/parse'
+import { defineComarkPlugin } from '@comark/vue/parse'
 
 // Comark plugin that links bare `@mentions` to GitHub profiles — the one thing
 // we relied on `remark-github` for. Issue, PR and commit references already

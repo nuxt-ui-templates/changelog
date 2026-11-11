@@ -1,5 +1,5 @@
-import shiki from '@comark/nuxt/plugins/shiki'
-import emoji from '@comark/nuxt/plugins/emoji'
+import shiki from '@comark/vue/plugins/shiki'
+import emoji from '@comark/vue/plugins/emoji'
 
 // Reusable Comark renderer with the plugins the changelog relies on baked in:
 // syntax highlighting (Comark's default theme), emoji shortcodes, and GitHub
