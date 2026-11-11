@@ -11,7 +11,7 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@comark/nuxt": "^0.8.1",
+    "@comark/vue": "^0.9.1",
     "@iconify-json/lucide": "^1.2.147",
     "@iconify-json/simple-icons": "^1.2.100",
     "@iconify-json/vscode-icons": "^1.2.93",
