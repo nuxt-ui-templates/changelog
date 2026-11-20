@@ -15,7 +15,7 @@
     "@iconify-json/lucide": "^1.2.155",
     "@iconify-json/simple-icons": "^1.2.102",
     "@iconify-json/vscode-icons": "^1.2.99",
-    "@nuxt/ui": "^4.12.2",
+    "@nuxt/ui": "^4.13.0",
     "nuxt": "^4.6.3",
     "scule": "^1.3.0",
     "shiki": "^4.6.0",
