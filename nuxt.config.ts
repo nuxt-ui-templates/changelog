@@ -13,6 +13,14 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   ui: {
+    eslint: {
+      ignore: ['^star$'],
+      rules: {
+        'no-unknown-classes': 'error',
+        'no-conflicting-classes': 'error',
+        'no-palette-colors': 'error'
+      }
+    },
     theme: {
       defaultVariants: {
         color: 'neutral'
